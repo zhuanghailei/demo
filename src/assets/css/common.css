@@ -1,0 +1,295 @@
+@import "normalize.css";
+/*公共类---------------------------*/
+/*<!---->去掉苹果短的样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+textarea {-webkit-appearance: none;}
+*{
+	margin: 0;
+	padding: 0;
+}
+::-webkit-scrollbar{
+  display:none;
+}
+/*网站灰白色*/
+/*html{
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+}
+*/
+/*
+::-webkit-input-placeholder {
+    color: #cccc66;
+}
+:-moz-placeholder {
+    color: #cccc66;
+}
+*/
+
+
+
+
+a{
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+::selection {
+    background: #FFF;
+    color: #333;
+}
+::-moz-selection {
+    background: #FFF;
+    color: #333;
+}
+::-webkit-selection {
+    background: #FFF;
+    color: #333;
+}
+.clearfix:after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0px;
+
+}
+.clearfix{
+	zoom:1;
+}
+.chao{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.chao2{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.chao3{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+li{
+	list-style: none;
+}
+input,textarea,select{
+	padding: 0;
+	margin: 0;
+	outline:none;
+}
+textarea{
+	resize: none;
+}
+p{
+	margin: 0;
+}
+body{
+	letter-spacing: 0.3px;
+	background: #fff;
+	font-family: "PingFang SC";
+	height: 100%;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+.in_body{
+	background: #EFEFF4;
+}
+.container{
+	padding: 0px 10px;
+}
+
+.container2{
+	padding: 0px 30px;
+}
+
+.section_qie{
+	position: fixed;
+	height: 44px;
+	top: 0px;
+	width: 100%;
+	z-index: 99;
+	background: #444;
+	line-height: 44px;
+	text-align: center;
+}
+.section_qie a{
+	display: inline-block;
+	margin: 0px 20px;
+	color: #fff;
+	font-size: 0.9rem;
+}
+.section_qie a.select{
+	color: #DFBD7E;
+}
+
+.sectionY{
+	position: fixed;
+	height: 44px;
+	top: 0px;
+	width: 100%;
+	z-index: 99;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.sectionY .p1{
+	text-align: center;
+	height: 44px;
+	line-height: 44px;
+	font-size: 17px;
+	font-weight: 500;
+	color: #000;
+}
+.sectionY .s1{
+	position: absolute;
+	left: 30px;
+	top: 11px;
+	color: #fff;
+	font-size: 0.8rem;
+}
+.sectionY .a1{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 1.2rem;
+
+}
+.sectionY .a1_x{
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	width: 0.6rem;
+}
+.sectionY .a2{
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	width: 1.2rem;
+
+}
+.sectionY .a3{
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	font-size: 0.8rem;
+	color: #868686;
+}
+
+
+.sectionYx{
+	position: fixed;
+	height: 44px;
+	top: 0px;
+	width: 100%;
+	/*border-bottom: 1px solid #eee;*/
+	z-index: 99;
+	background: #FF4546;
+}
+.sectionYx .p1{
+	text-align: center;
+	height: 44px;
+	line-height: 44px;
+	font-size: 17px;
+	font-weight: 500;
+	color: #fff;
+}
+.sectionYx .a1{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 1.5rem;
+}
+.sectionYx .a1_x{
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	width: 0.6rem;
+}
+.sectionYx .a2{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 1.5rem;
+}
+.sectionYx .a3{
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	font-size: 0.8rem;
+	color: #fff;
+}
+
+
+.kong1{
+	height: 44px;
+	width: 100%;
+	z-index: 90;
+}
+.kong{
+	height: 55px;
+}
+html{
+	height: 100%;
+}
+
+.ge{
+	height: 10px;
+	width: 100%;
+	background: #eee;
+}
+.deng_body{
+	background: #444;
+}
+.footer{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background: #fff;
+	z-index: 999;
+	/*box-shadow: 0px 0px 10px #eee;*/
+}
+.footer ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
+.footer ul li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.footer ul li a img{
+	width: 1.5rem;
+	height: 1.5rem;
+	position: relative;
+	top: 5px;
+}
+.footer ul li a p{
+	font-size: 0.8rem;
+	color: #868686;
+}
+.footer ul li a p.select{
+	color: #000;
+}
